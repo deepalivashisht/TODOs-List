@@ -1,6 +1,8 @@
 function getAndUpdate(){
     tit = document.getElementById('title').value;
     desc = document.getElementById('description').value;
+    title.value='';
+    description.value='';
     if (localStorage.getItem('itemsJson')==null){
         itemJsonArray = [];
         itemJsonArray.push([tit, desc]);
